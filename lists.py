@@ -178,7 +178,14 @@ def sum_numbers(numbers):
         0
     """
 
-    return None
+    if numbers == []:
+        return 0
+
+    current_sum = 0
+    for num in numbers:
+        current_sum = current_sum + num
+    
+    return current_sum
 
 
 def mult_numbers(numbers):
