@@ -153,8 +153,13 @@ def word_lengths(words):
         >>> word_lengths(["hello", "hey", "hello", "spam"])
         [5, 3, 5, 4]
     """
+    list_of_word_lengths = []
 
-    return []
+    for word in words:
+        length = len(word)
+        list_of_word_lengths.append(length)
+
+    return list_of_word_lengths
 
 
 def sum_numbers(numbers):
