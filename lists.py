@@ -207,8 +207,15 @@ def mult_numbers(numbers):
         >>> mult_numbers([])
         1
     """
+    if numbers == []:
+        return 1
+    
+    current_total = 1
 
-    return None
+    for num in numbers:
+        current_total = current_total * num
+
+    return current_total
 
 
 def join_strings(words):
